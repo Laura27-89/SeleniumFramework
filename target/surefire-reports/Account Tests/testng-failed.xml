@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Account Tests]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Search Tests - Firefox(failed)" verbose="0">
+    <parameter name="searchCriteria" value="iphone"/>
+    <parameter name="expectedResult" value="1"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestSearch">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="Test_Empty_Results"/>
+          <include name="AfterTest"/>
+          <include name="beforeMethod"/>
+          <include name="Validate_Search" invocation-numbers="0"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- TestSearch -->
+    </classes>
+  </test> <!-- Search Tests - Firefox(failed) -->
+</suite> <!-- Failed suite [Account Tests] -->

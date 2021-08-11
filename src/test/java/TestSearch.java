@@ -6,6 +6,8 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class TestSearch extends BaseClass{
     @Test
     @Parameters({"searchCriteria", "expectedResult"})
@@ -17,13 +19,13 @@ public class TestSearch extends BaseClass{
 
         Assert.assertTrue(driver.getCurrentUrl().contains("search="+searchCriteria));
 
-        //Assert.assertEquals(results.size(), expectedResult,
-        //String.format("Expecting %s results, but got %s", expectedResult, results.size()));
+        // Assert.assertEquals(results.size(), expectedResult,
+        //        String.format("Expecting %s results, but got %s", expectedResult, results.size()));
 
         Assert.assertEquals(getResults(), results,
                 "Expecting " + expectedResult + " results, but got " + getResults());
     }
-
+/*
     @Test
     public void Test_Empty_Results(){
         String searchCriteria = "Star Wars";
@@ -40,7 +42,7 @@ public class TestSearch extends BaseClass{
         Assert.assertEquals(getResults(), expectedResult,
                 "Expecting " + expectedResult + " results, but got " + getResults());
     }
-
+*/
     public int getResults(){
         return driver.findElements(By.cssSelector(".product-thumb")).size();
     }

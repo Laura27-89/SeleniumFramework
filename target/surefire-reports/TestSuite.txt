@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.445 sec
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 33.785 s <<< FAILURE! - in TestSuite
+Test_Empty_Results(TestSearch)  Time elapsed: 0.11 s  <<< FAILURE!
+java.lang.AssertionError: Expecting 0 results, but got 4 expected [0] but found [4]
+	at TestSearch.Test_Empty_Results(TestSearch.java:42)
+
+Validate_Search(TestSearch)  Time elapsed: 0.065 s  <<< FAILURE!
+java.lang.AssertionError: did not expect to find [true] but found [false]
+	at TestSearch.Validate_Search(TestSearch.java:20)
+

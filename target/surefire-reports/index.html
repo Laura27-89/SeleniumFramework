@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Account_Tests" class="navigator-link">
-              <span class="suite-name border-passed">Account Tests</span>
+              <span class="suite-name border-failed">Account Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Account_Tests" class="hide-methods failed suite-Account_Tests"> (hide)</a> <!-- hide-methods failed suite-Account_Tests -->
+                      <a href="#" panel-name="suite-Account_Tests" class="show-methods failed suite-Account_Tests"> (show)</a> <!-- show-methods failed suite-Account_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Account_Tests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Account_Tests" title="TestSearch" class="method navigator-link" hash-for-method="Test_Empty_Results">Test_Empty_Results</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Account_Tests" title="TestSearch" class="method navigator-link" hash-for-method="Validate_Search(iphone, 1)">Validate_Search(iphone, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Account_Tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Account_Tests" class="hide-methods passed suite-Account_Tests"> (hide)</a> <!-- hide-methods passed suite-Account_Tests -->
+                      <a href="#" panel-name="suite-Account_Tests" class="show-methods passed suite-Account_Tests"> (show)</a> <!-- show-methods passed suite-Account_Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-Account_Tests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Account_Tests" title="TestAccount" class="method navigator-link" hash-for-method="Test_Login_Successful">Test_Login_Successful</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Account_Tests" title="TestAccount" class="method navigator-link" hash-for-method="Test_Login_Unsuccessful">Test_Login_Unsuccessful</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Account_Tests -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,6 +141,65 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Account_Tests" class="panel Account_Tests">
+          <div class="suite-Account_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestSearch</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Empty_Results">
+                  </a> <!-- Test_Empty_Results -->
+                  <span class="method-name">Test_Empty_Results</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expecting 0 results, but got 4 expected [0] but found [4]
+	at TestSearch.Test_Empty_Results(TestSearch.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Validate_Search(iphone, 1)">
+                  </a> <!-- Validate_Search(iphone, 1) -->
+                  <span class="method-name">Validate_Search</span>
+                  <span class="parameters">(iphone, 1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at TestSearch.Validate_Search(TestSearch.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Account_Tests-class-failed -->
+          <div class="suite-Account_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Login_Successful">
+                  </a> <!-- Test_Login_Successful -->
+                  <span class="method-name">Test_Login_Successful</span>
+                  <em>
+(Test Login Success)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Login_Unsuccessful">
+                  </a> <!-- Test_Login_Unsuccessful -->
+                  <span class="method-name">Test_Login_Unsuccessful</span>
+                  <em>
+(Test Login Not Success)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Account_Tests-class-passed -->
         </div> <!-- panel Account_Tests -->
         <div panel-name="test-xml-Account_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -167,12 +264,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Test_Login_Successful')
+data.setCell(0, 2, 'TestAccount')
+data.setCell(0, 3, 1889);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Test_Login_Unsuccessful')
+data.setCell(1, 2, 'TestAccount')
+data.setCell(1, 3, 1497);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Test_Empty_Results')
+data.setCell(2, 2, 'TestSearch')
+data.setCell(2, 3, 96);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Validate_Search')
+data.setCell(3, 2, 'TestSearch')
+data.setCell(3, 3, 63);
 window.suiteTableData['Account_Tests']= { tableData: data, tableDiv: 'times-div-Account_Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Account_Tests">
               </div> <!-- times-div-Account_Tests -->
             </div> <!-- times-div -->
@@ -197,6 +310,79 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">59 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test_Login_Successful</span>
+                <span class="method-start">8589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod</span>
+                <span class="method-start">10492 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">11126 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test_Login_Unsuccessful</span>
+                <span class="method-start">14523 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod</span>
+                <span class="method-start">16038 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest</span>
+                <span class="method-start">16597 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestSearch</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">16625 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">16626 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test_Empty_Results</span>
+                <span class="method-start">24968 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod</span>
+                <span class="method-start">25079 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">26312 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Validate_Search(iphone, 1)</span>
+                <span class="method-start">31237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod</span>
+                <span class="method-start">31303 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest</span>
+                <span class="method-start">32537 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
