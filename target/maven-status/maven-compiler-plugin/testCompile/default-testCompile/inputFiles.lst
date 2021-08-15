@@ -1,4 +1,5 @@
-/Users/lalis/Desktop/repo/personal/SeleniumFramework/src/test/java/DemoAccount.java
-/Users/lalis/Desktop/repo/personal/SeleniumFramework/src/test/java/TestAccount.java
-/Users/lalis/Desktop/repo/personal/SeleniumFramework/src/test/java/BaseClass.java
-/Users/lalis/Desktop/repo/personal/SeleniumFramework/src/test/java/TestSearch.java
+/Users/lalis/Desktop/repo/personal/SeleniumFramework/src/test/java/selenium/TestAccount.java
+/Users/lalis/Desktop/repo/personal/SeleniumFramework/src/test/java/dataProviders/SearchProvider.java
+/Users/lalis/Desktop/repo/personal/SeleniumFramework/src/test/java/demo/TestWithData.java
+/Users/lalis/Desktop/repo/personal/SeleniumFramework/src/test/java/selenium/TestSearch.java
+/Users/lalis/Desktop/repo/personal/SeleniumFramework/src/test/java/demo/DemoAccount.java

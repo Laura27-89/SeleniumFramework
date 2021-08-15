@@ -1,4 +1,6 @@
-DemoAccount.class
-BaseClass.class
-TestSearch.class
-TestAccount.class
+selenium/TestSearch.class
+demo/DemoAccount.class
+dataProviders/SearchProvider.class
+demo/TestWithData.class
+selenium/TestAccount.class
+dataProviders/SearchProvider$1.class
