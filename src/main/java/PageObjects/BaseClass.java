@@ -1,3 +1,5 @@
+package PageObjects;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
@@ -21,13 +23,6 @@ public class BaseClass {
     @Parameters({"browser"})
     @BeforeMethod
     public void beforeMethod(@Optional("chrome") String browser) throws MalformedURLException, InterruptedException {
-
-        //WebDriverManager caps = WebDriverManager.firefoxdriver();
-
-        //DesiredCapabilities caps = DesiredCapabilities.chrome();
-        //String node = "http://localhost:8000/wd/hub";
-        //driver = new RemoteWebDriver(new URL(node), caps);
-
         switch (browser){
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
@@ -47,7 +42,7 @@ public class BaseClass {
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void AfterMethod(){
         TakeScreenshot();
         driver.close();
