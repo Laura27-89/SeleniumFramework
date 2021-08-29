@@ -73,5 +73,4 @@ public class AddToCartTests extends BaseClass {
         headerPage().goToDollarCurrency();
         Assert.assertEquals(testData.getDollarsPrice(), Double.parseDouble(productPage().getProductPrice().replace("$","")));
     }
-
 }
