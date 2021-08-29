@@ -1,16 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 100.802 s <<< FAILURE! - in TestSuite
-Test_Create_New_Account(selenium.TestAccount)  Time elapsed: 8.332 s  <<< FAILURE!
-java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]
-	at selenium.TestAccount.Test_Create_New_Account(TestAccount.java:82)
-
-Test_Empty_Results(selenium.TestSearch)  Time elapsed: 0.072 s  <<< FAILURE!
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 96.543 s <<< FAILURE! - in TestSuite
+Test_Empty_Results(selenium.TestSearch)  Time elapsed: 0.095 s  <<< FAILURE!
 java.lang.AssertionError: Expecting 0 results, but got 4 expected [0] but found [4]
 	at selenium.TestSearch.Test_Empty_Results(TestSearch.java:45)
 
-Validate_Search(selenium.TestSearch)  Time elapsed: 0.057 s  <<< FAILURE!
+Validate_Search(selenium.TestSearch)  Time elapsed: 0.066 s  <<< FAILURE!
 java.lang.AssertionError: did not expect to find [true] but found [false]
 	at selenium.TestSearch.Validate_Search(TestSearch.java:23)
 

@@ -1,0 +1,38 @@
+{
+  "dataSet": [
+    {
+      "product" : "macbook",
+      "imageURL" : "macbook_1-47x47.jpg",
+      "dolarsPrice": 602.00,
+      "poundsPrice" : 454.10,
+      "euroPrice": 518.16
+    }
+  ],
+  "dataSet": [
+    {
+      "product" : "macBook air",
+      "imageURL" : "macbook_air_1-228x228.jpg",
+      "dolarsPrice": 1202.00,
+      "poundsPrice" : 906.69,
+      "euroPrice": 1034.60
+    }
+  ],
+  "dataSet": [
+    {
+      "product" : "iphone",
+      "imageURL" : "iphone_1-228x228.jpg",
+      "dolarsPrice": 602.00,
+      "poundsPrice" : 454.10,
+      "euroPrice": 518.16
+    }
+  ],
+  "dataSet": [
+    {
+      "product" : "Canon EOS 5D",
+      "imageURL" : "canon_eos_5d_1-228x228.jpg",
+      "dolarsPrice": 98.00,
+      "poundsPrice" : 73.92,
+      "euroPrice": 84.35
+    }
+  ]
+}

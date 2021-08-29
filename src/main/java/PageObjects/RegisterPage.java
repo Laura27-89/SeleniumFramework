@@ -3,8 +3,7 @@ package PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class RegisterPage {
-    private WebDriver driver;
+public class RegisterPage extends BasePage {
 
     //Elementos
     private By NameLocator = By.name("firstname");
@@ -14,12 +13,13 @@ public class RegisterPage {
     private By PasswordLocator = By.name("password");
     private By ConfirmLocator = By.name("confirm");
     private By ConfirmRegisterMessageLocator = By.xpath("//div[@id='content']/h1");
+    private By DuplicateRegisterMessageLocator = By.xpath("//*[@id=\"account-register\"]/div[1]");
     private By TermsCheckBoxLocator = By.name("agree");
     private By ContinueButtonLocator = By.xpath("//input[@value='Continue']");
 
 
     public RegisterPage(WebDriver _driver){
-        this.driver = _driver;
+        super(_driver);
     }
     public void GoTo(){
         HeaderPage headerPage = new HeaderPage(driver);
@@ -42,5 +42,8 @@ public class RegisterPage {
         return driver.findElement(ConfirmRegisterMessageLocator).getText();
     }
 
+    public String DuplicatedErrorMessage(){
+        return driver.findElement(DuplicateRegisterMessageLocator).getText();
+    }
 
 }

@@ -1,0 +1,14 @@
+{
+  "dataSet": [
+    {
+      "email" : "laura.ulate@ucreativa.com",
+      "password" : "asdf",
+      "validAccount": true
+    },
+    {
+      "email" : "laura.ulate@ucreativa.com",
+      "password" : "as",
+      "validAccount": false
+    }
+  ]
+}

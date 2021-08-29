@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 3 failed,   5 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-Account_Tests" class="show-methods failed suite-Account_Tests"> (show)</a> <!-- show-methods failed suite-Account_Tests -->
                     </span>
                     <div class="method-list-content failed suite-Account_Tests">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Account_Tests" title="selenium.TestAccount" class="method navigator-link" hash-for-method="Test_Create_New_Account">Test_Create_New_Account</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Account_Tests" title="selenium.TestSearch" class="method navigator-link" hash-for-method="Test_Empty_Results">Test_Empty_Results</a> <!-- method navigator-link -->
@@ -126,6 +121,11 @@
                     <div class="method-list-content passed suite-Account_Tests">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Account_Tests" title="selenium.TestAccount" class="method navigator-link" hash-for-method="Test_Create_New_Account">Test_Create_New_Account</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Account_Tests" title="selenium.TestAccount" class="method navigator-link" hash-for-method="Test_Login_Successful">Test_Login_Successful</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -136,17 +136,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Account_Tests" title="selenium.TestSearch" class="method navigator-link" hash-for-method="Test_Search_WithData(pojo.SearchData@49e62b17)">Test_Search_WithData(pojo.SearchData@49e62b17)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Account_Tests" title="selenium.TestSearch" class="method navigator-link" hash-for-method="Test_Search_WithData(pojo.SearchData@210c1b9d)">Test_Search_WithData(pojo.SearchData@210c1b9d)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Account_Tests" title="selenium.TestSearch" class="method navigator-link" hash-for-method="Test_Search_WithData(pojo.SearchData@20184ade)">Test_Search_WithData(pojo.SearchData@20184ade)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Account_Tests" title="selenium.TestSearch" class="method navigator-link" hash-for-method="Test_Search_WithData(pojo.SearchData@a047bdb)">Test_Search_WithData(pojo.SearchData@a047bdb)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Account_Tests" title="selenium.TestSearch" class="method navigator-link" hash-for-method="Test_Search_WithData(pojo.SearchData@986b619)">Test_Search_WithData(pojo.SearchData@986b619)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Account_Tests" title="selenium.TestSearch" class="method navigator-link" hash-for-method="Test_Search_WithData(pojo.SearchData@2166c48a)">Test_Search_WithData(pojo.SearchData@2166c48a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Account_Tests -->
@@ -161,26 +161,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Account_Tests" class="panel Account_Tests">
-          <div class="suite-Account_Tests-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">selenium.TestAccount</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test_Create_New_Account">
-                  </a> <!-- Test_Create_New_Account -->
-                  <span class="method-name">Test_Create_New_Account</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]
-	at selenium.TestAccount.Test_Create_New_Account(TestAccount.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Account_Tests-class-failed -->
           <div class="suite-Account_Tests-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -222,6 +202,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="Test_Create_New_Account">
+                  </a> <!-- Test_Create_New_Account -->
+                  <span class="method-name">Test_Create_New_Account</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Test_Login_Successful">
                   </a> <!-- Test_Login_Successful -->
                   <span class="method-name">Test_Login_Successful</span>
@@ -248,26 +235,26 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_Search_WithData(pojo.SearchData@49e62b17)">
-                  </a> <!-- Test_Search_WithData(pojo.SearchData@49e62b17) -->
+                  <a name="Test_Search_WithData(pojo.SearchData@210c1b9d)">
+                  </a> <!-- Test_Search_WithData(pojo.SearchData@210c1b9d) -->
                   <span class="method-name">Test_Search_WithData</span>
-                  <span class="parameters">(pojo.SearchData@49e62b17)</span>
+                  <span class="parameters">(pojo.SearchData@210c1b9d)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_Search_WithData(pojo.SearchData@20184ade)">
-                  </a> <!-- Test_Search_WithData(pojo.SearchData@20184ade) -->
+                  <a name="Test_Search_WithData(pojo.SearchData@a047bdb)">
+                  </a> <!-- Test_Search_WithData(pojo.SearchData@a047bdb) -->
                   <span class="method-name">Test_Search_WithData</span>
-                  <span class="parameters">(pojo.SearchData@20184ade)</span>
+                  <span class="parameters">(pojo.SearchData@a047bdb)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Test_Search_WithData(pojo.SearchData@986b619)">
-                  </a> <!-- Test_Search_WithData(pojo.SearchData@986b619) -->
+                  <a name="Test_Search_WithData(pojo.SearchData@2166c48a)">
+                  </a> <!-- Test_Search_WithData(pojo.SearchData@2166c48a) -->
                   <span class="method-name">Test_Search_WithData</span>
-                  <span class="parameters">(pojo.SearchData@986b619)</span>
+                  <span class="parameters">(pojo.SearchData@2166c48a)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -338,42 +325,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test_Login_Successful')
+data.setCell(0, 1, 'Test_Create_New_Account')
 data.setCell(0, 2, 'selenium.TestAccount')
-data.setCell(0, 3, 8736);
+data.setCell(0, 3, 2487);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Test_Create_New_Account')
+data.setCell(1, 1, 'Test_Login_Successful')
 data.setCell(1, 2, 'selenium.TestAccount')
-data.setCell(1, 3, 8307);
+data.setCell(1, 3, 1733);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Test_Login_Unsuccessful')
 data.setCell(2, 2, 'selenium.TestAccount')
-data.setCell(2, 3, 4083);
+data.setCell(2, 3, 1436);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Test_Search_WithData')
 data.setCell(3, 2, 'selenium.TestSearch')
-data.setCell(3, 3, 2455);
+data.setCell(3, 3, 721);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Test_Search_WithData')
 data.setCell(4, 2, 'selenium.TestSearch')
-data.setCell(4, 3, 2124);
+data.setCell(4, 3, 628);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'Test_Search_WithData')
 data.setCell(5, 2, 'selenium.TestSearch')
-data.setCell(5, 3, 1578);
+data.setCell(5, 3, 529);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'Test_Empty_Results')
 data.setCell(6, 2, 'selenium.TestSearch')
-data.setCell(6, 3, 72);
+data.setCell(6, 3, 85);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'Validate_Search')
 data.setCell(7, 2, 'selenium.TestSearch')
-data.setCell(7, 3, 50);
+data.setCell(7, 3, 59);
 window.suiteTableData['Account_Tests']= { tableData: data, tableDiv: 'times-div-Account_Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Account_Tests">
               </div> <!-- times-div-Account_Tests -->
             </div> <!-- times-div -->
@@ -405,105 +392,103 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Test_Create_New_Account</span>
-                <span class="method-start">8315 ms</span>
+                <span class="method-start">4985 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod</span>
-                <span class="method-start">16657 ms</span>
+                <span class="method-start">7486 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">17194 ms</span>
+                <span class="method-start">8119 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Test_Login_Successful</span>
-                <span class="method-start">22033 ms</span>
+                <span class="method-start">20108 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod</span>
-                <span class="method-start">30779 ms</span>
+                <span class="method-start">21852 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">31289 ms</span>
+                <span class="method-start">22393 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Test_Login_Unsuccessful</span>
-                <span class="method-start">43520 ms</span>
+                <span class="method-start">32761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod</span>
-                <span class="method-start">47604 ms</span>
+                <span class="method-start">34198 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">selenium.TestSearch</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">48123 ms</span>
+                <span class="method-start">34781 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Test_Empty_Results</span>
-                <span class="method-start">56082 ms</span>
+                <span class="method-start">47252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod</span>
-                <span class="method-start">56156 ms</span>
+                <span class="method-start">47349 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">57196 ms</span>
+                <span class="method-start">48520 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test_Search_WithData(pojo.SearchData@986b619)</span>
-                <span class="method-start">65264 ms</span>
+                <span class="method-name">Test_Search_WithData(pojo.SearchData@a047bdb)</span>
+                <span class="method-start">61451 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod</span>
-                <span class="method-start">67720 ms</span>
+                <span class="method-start">62174 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">68630 ms</span>
+                <span class="method-start">63197 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test_Search_WithData(pojo.SearchData@49e62b17)</span>
-                <span class="method-start">74920 ms</span>
+                <span class="method-name">Test_Search_WithData(pojo.SearchData@2166c48a)</span>
+                <span class="method-start">78318 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod</span>
-                <span class="method-start">76499 ms</span>
+                <span class="method-start">78847 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">77295 ms</span>
+                <span class="method-start">79679 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test_Search_WithData(pojo.SearchData@20184ade)</span>
-                <span class="method-start">85722 ms</span>
+                <span class="method-name">Test_Search_WithData(pojo.SearchData@210c1b9d)</span>
+                <span class="method-start">84349 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod</span>
-                <span class="method-start">87853 ms</span>
+                <span class="method-start">84990 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">88702 ms</span>
+                <span class="method-start">85872 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Validate_Search(iphone, 1)</span>
-                <span class="method-start">98652 ms</span>
+                <span class="method-start">94311 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterMethod</span>
-                <span class="method-start">98710 ms</span>
+                <span class="method-start">94378 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

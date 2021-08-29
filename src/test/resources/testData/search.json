@@ -11,6 +11,11 @@
     {
       "searchCriteria" : "iPhone",
       "expectedResults" : 1
+    },
+
+    {
+      "searchCriteria" : "Macbook Air",
+      "expectedResults" : 1
     }
   ]
 }
